@@ -24,7 +24,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion androidCompileSdkVersion.toInteger()
 
-    ndkVersion androidCompileNdkVersion
+    ndkVersion '23.0.7123448 rc1'
     buildToolsVersion androidBuildToolsVersion
 
     buildFeatures {
