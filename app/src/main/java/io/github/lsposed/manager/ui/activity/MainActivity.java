@@ -100,9 +100,9 @@ public class MainActivity extends BaseActivity {
                 binding.statusIcon.setImageResource(R.drawable.ic_check_circle);
                 binding.statusSummary.setText(String.format(Locale.US, "%s (%d)", installXposedVersion, ConfigManager.getXposedVersionCode()));
             } else {
-                cardBackgroundColor = ResourcesKt.resolveColor(getTheme(), R.attr.colorError);
-                binding.statusIcon.setImageResource(R.drawable.ic_warning);
-                binding.statusSummary.setText(R.string.selinux_permissive_summary);
+                cardBackgroundColor = ResourcesKt.resolveColor(getTheme(), R.attr.colorNormal);
+                binding.statusIcon.setImageResource(R.drawable.ic_check_circle);
+                binding.statusSummary.setText(String.format(Locale.US, "%s (%d)", installXposedVersion, ConfigManager.getXposedVersionCode()));
             }
         } else {
             cardBackgroundColor = ResourcesKt.resolveColor(getTheme(), R.attr.colorInstall);
